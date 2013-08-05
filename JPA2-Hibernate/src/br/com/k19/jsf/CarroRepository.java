@@ -18,6 +18,7 @@ public class CarroRepository {
 		this.manager.persist(carro);
 	}
 
+	@SuppressWarnings("unchecked")
 	public List<Carro> buscaTodos() {
 		Query query = this.manager.createQuery("select x from Carro x");
 		return query.getResultList();

@@ -12,7 +12,7 @@
     <servlet-name>OlaMundo</servlet-name>
     <url-pattern>/OlaMundo</url-pattern>
   </servlet-mapping>
-  <!-- JSF -->
+  <!-- JSF --> 
   <servlet>
     <servlet-name>Faces Servlet</servlet-name>
     <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>

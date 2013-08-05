@@ -20,8 +20,8 @@ public class GerandoTabelas {
 		
 		// criando objetos
 		Carro carro = new Carro();  
-		carro.setMarca("Renaut");
-		carro.setModelo("Logan");
+		carro.setMarca("Chevrolet");
+		carro.setModelo("Classic");
 
 		// persistindo dados
 		manager.persist(carro);

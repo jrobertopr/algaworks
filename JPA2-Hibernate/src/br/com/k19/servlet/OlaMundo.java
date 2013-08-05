@@ -18,7 +18,7 @@ public class OlaMundo extends HttpServlet {
 
 		// processando regras de negócio e gerando conteúdo
 		PrintWriter writer = resp.getWriter();
-		writer.println("<html><body><h1>Olá Mundo</h1></body></html>");
+		writer.println("<html><body>Olá Mundo</body></html>");
 	}
 
 }

@@ -10,7 +10,7 @@ import br.com.k19.entidade.Livro;
 public class AdicionaDadosComJPA {
 	public static void main(String[] args) {
 
-		// criando uma entidade de gerenciamento
+		// manipulando entidade de gerenciamento
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("livraria_pu");
 		EntityManager manager = factory.createEntityManager();
 		

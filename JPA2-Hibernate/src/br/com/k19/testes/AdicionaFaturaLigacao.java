@@ -11,7 +11,7 @@ import br.com.k19.mapeamento.Ligacao;
 
 public class AdicionaFaturaLigacao {
 	public static void main(String[] agrs) {
-		// criando entidade de gerenciamento
+		// manipulando entidade de gerenciamento
 		EntityManagerFactory factory =
 			Persistence.createEntityManagerFactory("livraria_pu");
 		EntityManager manager = factory.createEntityManager();

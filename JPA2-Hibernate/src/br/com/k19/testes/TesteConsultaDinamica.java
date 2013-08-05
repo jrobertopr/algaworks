@@ -17,6 +17,9 @@ public class TesteConsultaDinamica {
 		EntityManager manager = factory.createEntityManager();
 		
 		Query query = manager.createQuery("select a from Autor a");
+		
+		// testando excesão		
+		@SuppressWarnings("unchecked")
 		List<Autor> autores = query.getResultList();
 		
 		for(Autor autor : autores) {

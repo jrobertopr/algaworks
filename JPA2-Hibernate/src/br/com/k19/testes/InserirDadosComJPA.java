@@ -11,7 +11,7 @@ import br.com.k19.mapeamento.Contato;
 public class InserirDadosComJPA {
 	public static void main(String[] args) {
 
-		// criando conexão
+		// manipulando entidade
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("livraria_pu");
 
 		// criando entidade de gerenciamento
@@ -22,9 +22,9 @@ public class InserirDadosComJPA {
 		
 		// criando objetos
 		Contato novoContato = new Contato();
-		novoContato.setNome("Karla Erica");
-		novoContato.setEmail("karla@hotmail.com");
-		novoContato.setEndereco("Rua Domingos Neto, 3331");
+		novoContato.setNome("Emanuel Rocha");
+		novoContato.setEmail("emanuel@hotmail.com");
+		novoContato.setEndereco("Avenida dos Jangadeiros, 145");
 		novoContato.setDataNascimento(Calendar.getInstance());
 
 		// persistindo dados
@@ -32,13 +32,15 @@ public class InserirDadosComJPA {
 
 		// encerrando transação salvando as alterações
 		manager.getTransaction().commit();
-		System.out.println("Dados adicionados com sucesso!");
-		
+	
 		// fechando entidade de gerenciamento
 		manager.close();
 		
 		// fechando conexao
 		factory.close();
+
+		System.out.println("Dados adicionados com sucesso!");
+
 	}
 
 }

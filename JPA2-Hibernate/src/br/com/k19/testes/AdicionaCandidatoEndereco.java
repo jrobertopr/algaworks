@@ -12,7 +12,7 @@ import br.com.k19.mapeamento.Endereco;
 public class AdicionaCandidatoEndereco {
 	public static void main(String[] agrs) {
 
-		// criando conexão e entidade de gerenciamento 
+		// manipulando entidade de gerenciamento 
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("livraria_pu");
 		EntityManager manager = factory.createEntityManager();
 		

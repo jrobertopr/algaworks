@@ -5,12 +5,12 @@
 	http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
 
 <!-- unidade de persistência -->
-<persistence-unit name="livraria_pu" transaction-type="RESOURCE_LOCAL">
+<persistence-unit name="K19-PU" transaction-type="RESOURCE_LOCAL">
 	<provider>org.hibernate.ejb.HibernatePersistence</provider>
 
 	<properties>
 		<!--Configuracoes de dialeto e conexao -->
-		<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/livraria_db" />
+		<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/futebol_db" />
 		<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
 		<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
 		<property name="javax.persistence.jdbc.user" value="postgres" />

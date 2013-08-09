@@ -7,7 +7,7 @@
 <!-- unidade de persistência -->
 <persistence-unit name="livraria_pu" transaction-type="RESOURCE_LOCAL">
 	<provider>org.hibernate.ejb.HibernatePersistence</provider>
-<class>br.com.k19.entidade.Editora</class>
+
 	<properties>
 		<!--Configuracoes de dialeto e conexao -->
 		<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/livraria_db" />

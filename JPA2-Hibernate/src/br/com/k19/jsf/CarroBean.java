@@ -9,6 +9,7 @@ import javax.persistence.EntityManager;
 import javax.servlet.http.HttpServletRequest;
 
 import br.com.k19.entidade.Carro;
+import br.com.k19.servico.CarroRepository;
 
 @ManagedBean
 public class CarroBean {

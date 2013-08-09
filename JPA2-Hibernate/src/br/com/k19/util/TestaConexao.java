@@ -1,4 +1,4 @@
-package br.com.k19.servico;
+package br.com.k19.util;
 
 import java.sql.Connection;
 import java.sql.SQLException;

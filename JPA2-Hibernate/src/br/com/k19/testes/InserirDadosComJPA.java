@@ -22,9 +22,9 @@ public class InserirDadosComJPA {
 		
 		// criando objetos
 		Contato novoContato = new Contato();
-		novoContato.setNome("Emanuel Rocha");
-		novoContato.setEmail("emanuel@hotmail.com");
-		novoContato.setEndereco("Avenida dos Jangadeiros, 145");
+		novoContato.setNome("Menescal Dias");
+		novoContato.setEmail("menescal@hotmail.com");
+		novoContato.setEndereco("Avenida do Coqueiro, 1145");
 		novoContato.setDataNascimento(Calendar.getInstance());
 
 		// persistindo dados

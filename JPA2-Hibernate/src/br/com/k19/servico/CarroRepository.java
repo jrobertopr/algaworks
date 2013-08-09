@@ -1,4 +1,4 @@
-package br.com.k19.jsf;
+package br.com.k19.servico;
 
 import java.util.List;
 

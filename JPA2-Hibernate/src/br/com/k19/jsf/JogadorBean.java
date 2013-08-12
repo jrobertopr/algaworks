@@ -95,6 +95,14 @@ public class JogadorBean {
 	public void setJogadores(List<Jogador> jogadores) {
 		this.jogadores = jogadores;
 	}
+
+	public Long getTimeID() {
+		return timeID;
+	}
+
+	public void setTimeID(Long timeID) {
+		this.timeID = timeID;
+	}
 	
 
 }

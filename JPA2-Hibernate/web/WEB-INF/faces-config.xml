@@ -4,4 +4,15 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 		http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd" version="2.0">
 
+  <managed-bean>
+  	<managed-bean-name>controleTime</managed-bean-name>
+	<managed-bean-class>br.com.k19.jsf.TimeBean</managed-bean-class>
+  	<managed-bean-scope>session</managed-bean-scope>
+  	</managed-bean>
+  <managed-bean>
+	<managed-bean-name>controleJogadores</managed-bean-name>
+	<managed-bean-class>br.com.k19.jsf.JogadorBean</managed-bean-class>
+ 	<managed-bean-scope>session</managed-bean-scope>
+  </managed-bean>  
+ 
 </faces-config>

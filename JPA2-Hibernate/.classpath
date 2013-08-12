@@ -48,5 +48,14 @@
 	<classpathentry kind="lib" path="web/WEB-INF/lib/stax2-api-3.1.1.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/staxmapper-1.1.0.Final.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/woodstox-core-asl-4.1.1.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/jsf-api.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/jsf-facelets.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/jsf-impl.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/jsf-tlds.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/slf4j-api-1.5.11.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/slf4j-jdk14-1.5.11.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/slf4j-log4j12-1.5.11.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/standard.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

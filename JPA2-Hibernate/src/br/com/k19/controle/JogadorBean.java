@@ -9,8 +9,8 @@ import javax.faces.context.FacesContext;
 import javax.persistence.EntityManager;
 import javax.servlet.http.HttpServletRequest;
 
-import br.com.k19.entidade.Time;
 import br.com.k19.entidade.Jogador;
+import br.com.k19.entidade.Time;
 import br.com.k19.servico.JogadorRepository;
 import br.com.k19.servico.TimeRepository;
 

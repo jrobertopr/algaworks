@@ -1,4 +1,4 @@
-package br.com.k19.filtro;
+package br.com.k19.util;
 
 import java.io.IOException;
 
@@ -20,7 +20,7 @@ public class JPAFilter implements Filter {
 	
 	@Override
 	public void init(FilterConfig filterConfig) throws ServletException {
-		this.factory = Persistence.createEntityManagerFactory("K19-PU");
+		this.factory = Persistence.createEntityManagerFactory("K19_PU");
 	}
 	
 	@Override
@@ -28,16 +28,19 @@ public class JPAFilter implements Filter {
 		this.factory.close();
 	}
 	
-	@Override
-	public void doFilter(ServletRequest request, ServletResponse response,
-			FilterChain chain) throws IOException, ServletException {
+	@Override	
+	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
+		throws IOException, ServletException {
+
+		// Inicializando e finalizando unidade de persistência
+		// Gerenciando abertura e confirmação das transações
 		
 		// CHEGADA
 		EntityManager manager = this.factory.createEntityManager();
 		request.setAttribute("EntityManager", manager);
 		manager.getTransaction().begin();
 		
-		// FACS SERVLET
+		// Faces Servlet
 		chain.doFilter(request, response);
 		
 		// SAÍDA
@@ -49,5 +52,4 @@ public class JPAFilter implements Filter {
 			manager.close();
 		}
 	}
-
 }

@@ -6,12 +6,12 @@
 
   <managed-bean>
   	<managed-bean-name>controleTime</managed-bean-name>
-	<managed-bean-class>br.com.k19.jsf.TimeBean</managed-bean-class>
+	<managed-bean-class>br.com.k19.controle.TimeBean</managed-bean-class>
   	<managed-bean-scope>session</managed-bean-scope>
   	</managed-bean>
   <managed-bean>
 	<managed-bean-name>controleJogadores</managed-bean-name>
-	<managed-bean-class>br.com.k19.jsf.JogadorBean</managed-bean-class>
+	<managed-bean-class>br.com.k19.controle.JogadorBean</managed-bean-class>
  	<managed-bean-scope>session</managed-bean-scope>
   </managed-bean>  
  

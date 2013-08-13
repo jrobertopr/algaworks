@@ -10,7 +10,7 @@ public class GerandoTabelas {
 	public static void main(String[] args) {
 		
 		// manipulando entidade
-		EntityManagerFactory factory = Persistence.createEntityManagerFactory("livraria_pu");
+		EntityManagerFactory factory = Persistence.createEntityManagerFactory("K19_PU");
 		
 		// criando entidade de gerenciamento
 		EntityManager manager = factory.createEntityManager();  

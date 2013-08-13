@@ -4,13 +4,14 @@
     xmlns:ui="http://java.sun.com/jsf/facelets" 
     xmlns:f="http://java.sun.com/jsf/core" 
     xmlns:h="http://java.sun.com/jsf/html">
-    <h:head>
-        <title>K19 Treinamentos JSF2</title>
-    </h:head>
-    <h:body>
-       Valor de numero é #{testeBean.numero}
-       
-       <h:form>
+<h:head>
+    <title>K19 Treinamentos JSF2</title>
+</h:head>
+
+<h:body>
+    Valor de numero é #{testeBean.numero}
+
+	<h:form>
        	<h:inputText value="#{testeBean.numero}" />
 
 		<!-- Alterando número através do método incrementaNumero -->
@@ -20,20 +21,7 @@
 		</br>
 		<h:inputTextarea value="#{testeBean.texto}" />
 		<h:commandButton value="Transformar" action="#{testeBean.transformaEmCaixaAlta}" />
+	</h:form>
 
-       </h:form>
-       
-       <h1>times</h1>
-    	<h:form>
-    		<ui:include src="/time/novo-time.xhtml" />
-    		<ui:include src="/time/lista-de-times.xhtml" />
-    	</h:form>
-    	
-   	  <h1>jogadores</h1>
-    	<h:form>
-    		<ui:include src="/jogador/novo-jogador.xhtml" />
-    		<ui:include src="/jogador/lista-de-jogadores.xhtml" />
-    	</h:form>
-       
-    </h:body>
+</h:body>
 </html>

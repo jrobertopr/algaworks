@@ -17,6 +17,21 @@ public class TimeBean {
 	
 	private Time time = new Time();
 	private List<Time> times;
+
+	// GETTERS E SETTERS
+	
+	public Time getTime() {
+		return time;
+	}
+
+	public void setTime(Time time) {
+		this.time = time;
+	}
+	
+	public void setTimes(List<Time> times) {
+		this.times = times;
+	}
+	
 	
 	public void adiciona() {
 		EntityManager manager = this.getManager();
@@ -66,19 +81,5 @@ public class TimeBean {
 		return (EntityManager) request.getAttribute("EntityManager");
 	}
 
-	// GETTERS E SETTERS
-	
-	public Time getTime() {
-		return time;
-	}
-
-	public void setTime(Time time) {
-		this.time = time;
-	}
-
-	public void setTimes(List<Time> times) {
-		this.times = times;
-	}
-	
 
 }
